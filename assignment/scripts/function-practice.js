@@ -63,8 +63,9 @@ console.log(getLast('1,2'));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array){
+  array = []
   for (let i = 0; i < array.length; i++){
-    if (array[i] === value){
+    if (array[i] == value){
       return true;
     }
     else {
